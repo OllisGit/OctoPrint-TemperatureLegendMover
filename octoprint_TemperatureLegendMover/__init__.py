@@ -68,7 +68,7 @@ class TemperaturelegendmoverPlugin(octoprint.plugin.SettingsPlugin,
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/archive/{target_version}.zip"
+				pip="https://github.com/OllisGit/OctoPrint-TemperatureLegendMover/releases/latest/download/master.zip"
 			)
 		)
 
