@@ -17,9 +17,10 @@ $(function() {
         self.pluginSettings = null;
 
         self._updateLegendPosition = function(){
-            self.temperatureViewModel.plot.getOptions().legend.position = self.pluginSettings.legendPositionMode();
+            if (self.temperatureViewModel.plot){
+                self.temperatureViewModel.plot.getOptions().legend.position = self.pluginSettings.legendPositionMode();
+            }
         }
-
 
         ///////////////////////////////////////////////////// START: OctoPrint Hooks
         self.onBeforeBinding = function() {
